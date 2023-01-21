@@ -20,6 +20,7 @@ a {
 	align-items: center;
 	justify-content: space-between;
 	gap: 25px;
+	z-index: 1;
 }
 .navPc ul {
 	list-style: none;

@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 6rem;
+  background-color: #0a0f18;
 }
 
 .hards-title {
@@ -93,14 +93,14 @@
 }
 
 
-@media screen and (min-width: 300px) and (max-width: 690px) {
+@media screen and (min-width: 200px) and (max-width: 690px) {
   .carousel {
     width: 90vw;
   }
 
   .item {
     width: 70vw;
-    height: 50vh;
+    height: 60vh;
   }
 
   .item img {
@@ -113,6 +113,6 @@
   }
 
   .hards-title {
-    font-size: 45px;
+    font-size: 35px;
   }
 }

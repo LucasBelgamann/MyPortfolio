@@ -22,7 +22,7 @@
 .about-title {
    color: #ffffff;
    text-align: center;
-   font-size: 30px;
+   font-size: 35px;
    margin-top: 100px;
    margin-bottom: 60px;
 }
@@ -40,6 +40,7 @@
 
 @media screen and ( min-width: 390px ) and ( max-width: 700px ) {
     .description {
+        font-size: 20px;
         width: 90%;
     }
     .container-aboutme {

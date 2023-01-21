@@ -6,7 +6,7 @@ const ProjectsTeste = () => {
   return (
     <div className="container-pro">
       <h1 className="title-projects" id="projects">
-        Projects
+        Projetos
       </h1>
       <div className="container-projects">
         <div class="card">

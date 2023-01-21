@@ -7,7 +7,7 @@ body {
   border-bottom: 1px solid white;
     background-color: black;
     height: 80px;
-    width: 100%;
+    min-width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -30,6 +30,7 @@ body {
     top: 0;
     left: -100%;
     transition: 850ms;
+    z-index: 1;
   }
   
   .nav-menu.active {

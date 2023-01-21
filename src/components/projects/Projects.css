@@ -147,6 +147,7 @@
   }
   
   .container-pro {
+    padding-top: 15px;
     height: 140vh;
   }
 
@@ -193,6 +194,10 @@
 
   .card .content h2{
     padding-top: 10px;
+  }
+
+  .title-projects {
+    font-size: 40px;
   }
 }
 

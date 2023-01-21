@@ -1,98 +1,187 @@
 .form {
-    background-color: rgb(32, 33, 33);
-    display: flex;
-    padding: 20px;
-    height: 50vh;
-    width: 60vh;
-    border-radius: 10px;
-    flex-direction: column;
+  background-color: #0a0f18;
+  display: flex;
+  padding: 20px;
+  height: 60vh;
+  width: 60vh;
+  border-radius: 10px;
+  flex-direction: column;
 }
 
 .form input {
+  height: 8vh;
+  width: 20vw;
+  padding-left: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.form textarea {
+  height: 13vh;
+  width: 20vw;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  resize: none;
+}
+
+.form button {
+  border: none;
+  color: white;
+  background-color: rgb(3, 39, 106);
+  width: 15vw;
+  height: 7vh;
+  border-radius: 10px;
+  margin: 5px auto;
+}
+
+.form h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-form {
+  background-color: black;
+  height: 80vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid white;
+}
+
+.links img {
+  width: 5vw;
+}
+
+.links span {
+  color: white;
+}
+
+.developer span {
+  color: rgb(137, 136, 136);
+  margin: auto;
+}
+
+.developer {
+  display: flex;
+  height: 7vh;
+  border-top: 1px solid rgb(137, 136, 136);
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.social h4 {
+  text-align: center;
+  width: 20vw;
+  margin-bottom: 50px;
+}
+
+.linked {
+  margin: 0 50px;
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+  .container-form {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .form {
+    height: 65vh;
+    width: 90vw;
+  }
+
+  .form input {
     height: 8vh;
-    width: 20vw;
+    width: 75vw;
     padding-left: 20px;
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 15px;
-}
+  }
 
-.form textarea {
+  .form textarea {
     height: 13vh;
-    width: 20vw;
+    width: 75vw;
     padding: 20px;
     border-radius: 10px;
     margin: 0 auto;
     margin-bottom: 15px;
-}
-
-.form button {
-   width: 15vw;
-   height: 7vh;
-   border-radius: 10px;
-   margin: 5px auto;
-}
-
-.form h2 {
- color: white;
- text-align: center;
- margin-bottom: 20px;
-}
-
-.container-form {
-    background-color: black;
-    height: 60vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.links img {
-    width: 5vw;
-    margin-left: 80px;
-}
-
-.links span {
-    color: white
-}
-
-@media screen and ( min-width: 390px ) and ( max-width: 700px ) {
-    .container-form {
-       flex-direction: column;
-       height: 80vh;
-    }
-
-    .form {
-        width: 90vw;
-    }
-    
-    .form input {
-        height: 8vh;
-        width: 60vw;
-        padding-left: 20px;
-        border-radius: 10px;
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
-    
-    .form textarea {
-        height: 13vh;
-        width: 60vw;
-        padding: 20px;
-        border-radius: 10px;
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
-
-    .form button {
-        width: 35vw;
-        height: 7vh;
-        border-radius: 10px;
-        margin: 5px auto;
-     }
-
-     .links img {
-        width: 15vw;
-        margin: 20px;
-    }
   }
+
+  .form h2 {
+    margin-bottom: 50px;
+  }
+
+  .form button {
+    font-weight: bold;
+    width: 50vw;
+    font-size: 17px;
+    cursor: pointer;
+    height: 7vh;
+    border-radius: 10px;
+    margin: 5px auto;
+  }
+
+  .links img {
+    width: 12vw;
+    margin: 20px;
+  }
+}
+
+@media screen and (min-width: 390px) and (max-width: 700px) {
+  .container-form {
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .form {
+    height: 65vh;
+    width: 90vw;
+  }
+
+  .form input {
+    height: 8vh;
+    width: 75vw;
+    padding-left: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .form textarea {
+    height: 13vh;
+    width: 75vw;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .form h2 {
+    margin-bottom: 50px;
+  }
+
+  .form button {
+    font-weight: bold;
+    width: 50vw;
+    font-size: 17px;
+    cursor: pointer;
+    height: 7vh;
+    border-radius: 10px;
+    margin: 5px auto;
+  }
+
+  .links img {
+    width: 12vw;
+    margin: 20px;
+  }
+}

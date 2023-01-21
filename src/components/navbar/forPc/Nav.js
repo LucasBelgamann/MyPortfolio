@@ -10,32 +10,27 @@ const Nav = () => {
       <ul>
         <li>
           <a href="#" class="link">
-            
-          </a>
-        </li>
-        <li>
-          <a href="#" class="link">
-            Home
+            Início
           </a>
         </li>
         <li>
           <a href="#about-title" class="link">
-            About me
+          Sobre mim
           </a>
         </li>
         <li>
           <a href="#projects" class="link">
-            Projects
+            Projetos
           </a>
         </li>
         <li>
           <a href="#hards" class="link">
-            Hards skills
+           Habilidades
           </a>
         </li>
         <li>
           <a href="#footer" class="link">
-            Contact me
+            Contato
           </a>
         </li>
       </ul>
