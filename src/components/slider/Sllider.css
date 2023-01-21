@@ -1,0 +1,161 @@
+.slider-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #181b22;
+    border-bottom: 1px solid white;
+  }
+
+  .slider{
+    width: 70vw;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 70vw;
+    height: 80vh;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 30%;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .manual-btn{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: gray;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+    z-index: 2;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid gray;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: gray;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: gray;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: gray;
+  }
+
+  @media screen and (min-width: 200px) and ( max-width: 400px ){
+    .slider{
+      margin-top: 80px;
+      width: 90vw;
+      height: 50vh;
+    }
+
+    .slide img{
+      width: 90vw;
+      height: 45vh;
+    }
+
+    .navigation-manual{
+      margin-top: -60%;
+      margin-left: 30%;
+    }
+
+    .slider-container {
+      height: 60vh;
+      justify-content: center;
+    }
+  }
+
+  @media screen and ( min-width: 390px ) and ( max-width: 700px ){
+    .slider-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #181b22;
+      border-bottom: 1px solid white;
+    }
+    
+    .slider{
+      margin-top: 150px;
+      width: 90vw;
+      height: 45vh;
+    }
+
+    .slide img{
+      width: 90vw;
+      height: 35vh;
+    }
+
+    .navigation-manual{
+      margin-top: -55%;
+      margin-left: 30%;
+    }
+
+    .slider-container {
+      height: 50vh;
+    }
+  }
