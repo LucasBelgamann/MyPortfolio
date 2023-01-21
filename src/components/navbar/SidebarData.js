@@ -30,7 +30,7 @@ export const SidebarData = [
   },
   {
     title: ' Contact me',
-    path: '#',
+    path: '#footer',
     icon: <FaIcons.FaEnvelopeOpenText />,
     cName: 'nav-text'
   },

@@ -11,7 +11,7 @@ const Slider = () => {
     if (counter > 4) {
       counter = 1;
     }
-  }, 6000);
+  }, 5000);
 
   return (
     <div className="slider-container">

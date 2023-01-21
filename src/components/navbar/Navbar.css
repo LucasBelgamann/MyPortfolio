@@ -4,6 +4,7 @@ body {
 
 .navbar {
   position: fixed;
+  border-bottom: 1px solid white;
     background-color: black;
     height: 80px;
     width: 100%;

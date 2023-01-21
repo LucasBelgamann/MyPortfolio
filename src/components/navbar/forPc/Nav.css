@@ -12,6 +12,7 @@ a {
 .navPc {
 	position: fixed;
 	background-color: black;
+	border-bottom: 1px solid white;
 	color: #fff;
 	display: flex;
     height: 7vh;

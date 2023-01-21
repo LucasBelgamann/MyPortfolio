@@ -34,7 +34,7 @@ const Nav = () => {
           </a>
         </li>
         <li>
-          <a href="#" class="link">
+          <a href="#footer" class="link">
             Contact me
           </a>
         </li>

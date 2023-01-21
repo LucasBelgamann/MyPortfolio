@@ -11,6 +11,8 @@ import reactTesting from './images/reactTesting.png';
 import styledC from './images/styledC.png';
 import jest from './images/jest.png';
 import reac from './images/reac.png';
+import typesS from './images/typesS.png';
+import java from './images/java.png';
 
 export const hards = [
     {
@@ -24,6 +26,18 @@ export const hards = [
         path: 'https://www.techtudo.com.br/noticias/2012/04/o-que-e-e-como-usar-o-mysql.ghtml',
         cName: 'hard-item',
         url: mySql
+    },
+    {
+        title: 'Java',
+        path: 'https://www.techtudo.com.br/noticias/2012/04/o-que-e-e-como-usar-o-mysql.ghtml',
+        cName: 'hard-item',
+        url: java
+    },
+    {
+        title: 'Types Script',
+        path: 'https://developer.mozilla.org/pt-BR/docs/Web/javaScript',
+        cName: 'hard-item',
+        url: typesS
     },
     {
         title: 'Java Script',
