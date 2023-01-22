@@ -13,7 +13,9 @@ function Footer() {
           <input type="email" placeholder="Type your email" />
           <textarea placeholder="Type your message" />
           <button type="submit">Enviar</button>
-          <button type="submit">Dowload cv</button>
+          <button type="submit">
+          <a href="/curriculo.pdf" download>Download CV</a>
+          </button>
         </form>
        <div className="links">
           <a href="https://github.com/LucasBelgamann">
