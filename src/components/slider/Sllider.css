@@ -42,7 +42,6 @@
     margin-left: 32%;
     display: flex;
     justify-content: center;
-    z-index: 2;
   }
   
   .manual-btn{

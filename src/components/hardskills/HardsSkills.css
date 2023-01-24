@@ -71,7 +71,6 @@
   font-size: 90px;
   cursor: pointer;
   margin-top: 10rem;
-  z-index: 2;
   opacity: 0.6;
   transition: opacity;
   transition-duration: 1s;
