@@ -28,6 +28,7 @@ function Footer() {
           <textarea placeholder="Digite sua menssagem" name="message" />
           <button type="submit">Enviar</button>
         </form>
+        <div class="line"></div>
         <div className="links">
           <a href="https://github.com/LucasBelgamann">
             <img src={git} alt="github" />
