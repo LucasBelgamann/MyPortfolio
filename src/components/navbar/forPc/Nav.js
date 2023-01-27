@@ -36,7 +36,7 @@ const Nav = () => {
         </li>
         <li>
           <FaIcons.FaEnvelopeOpenText />
-          <a href="#footer" class="link">
+          <a href="#contact" class="link">
             Contato
           </a>
         </li>

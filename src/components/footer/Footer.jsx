@@ -1,54 +1,98 @@
+import * as AiIcons from "react-icons/ai";
+import * as GrIcons from "react-icons/gr";
 import "./Footer.css";
-import git from "./images/git.png";
-import linkedin from "./images/linkedin.png";
-import instagram from "./images/Insta.png";
 
-function Footer() {
+const Footer = () => {
   return (
-    <div>
-      <div className="container-form">
-        <form
-          className="form"
-          action="https://api.staticforms.xyz/submit"
-          method="post"
-        >
-          <h2 id="footer">Formulário para contato</h2>
-          <input
-            type="hidden"
-            name="accessKey"
-            value="a90e6195-838c-47e5-90c0-80ba0cda36fd"
-          />
-          <input
-            type="hidden"
-            name="redirectTo"
-            value="https://my-portfolio-git-main-lucasbelgamann.vercel.app/"
-          ></input>
-          <input type="text"  name="name" placeholder="Digite seu nome" />
-          <input type="email" name="email" placeholder="Type your email" />
-          <textarea placeholder="Digite sua menssagem" name="message" />
-          <button type="submit">Enviar</button>
-        </form>
-        <div class="line"></div>
-        <div className="links">
-          <a href="https://github.com/LucasBelgamann">
-            <img src={git} alt="github" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/lucasbelgamann/"
-            className="linked"
-          >
-            <img src={linkedin} alt="linkedin" />
-          </a>
-          <a href="https://www.instagram.com/lucasag0stinh0/">
-            <img src={instagram} alt="linkedin" />
-          </a>
+    <div className="container-footer">
+      <div className="container-contact">
+        <div className="contact">
+        <div className="contact-form" id="contact">
+            <h3 id="contact">Fale comigo</h3>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+              <div className="sigle-input">
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  className="input"
+                  id="nome"
+                />
+                <label htmlFor="nome">Nome</label>
+              </div>
+              <div className="sigle-input">
+                <input
+                  type="text"
+                  name="email"
+                  required
+                  className="input"
+                  id="email"
+                />
+                <label htmlFor="email">Telefone</label>
+              </div>
+              <textarea
+                name="message"
+                required
+                className="textarea"
+                placeholder="Digite a sua mensagem"
+              />
+              <input
+                type="hidden"
+                name="accessKey"
+                value="a90e6195-838c-47e5-90c0-80ba0cda36fd"
+              ></input>
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="https://acqualine.vercel.app/"
+              ></input>
+              <button>Enviar</button>
+            </form>
+          </div>
+          <div className="contact-line"></div>
+          <div className="links-contact">
+            <div className="contact-info">
+              <div>
+                <a
+                  href="https://github.com/LucasBelgamann"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <AiIcons.AiFillGithub />
+                </a>
+              </div>
+            </div>
+            <div className="contact-info">
+              <div>
+                <a
+                  href="https://www.linkedin.com/in/lucas-gabriel-belgamann-2b0497174/"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="linkedin"
+                >
+                  <AiIcons.AiFillLinkedin />
+                </a>
+              </div>
+            </div>
+            <div className="contact-info">
+              <div>
+                <a
+                  href="https://www.instagram.com/lucasag0stinh0/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <GrIcons.GrInstagram />
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
       <div className="developer">
-        <span>Developed by Lucas Agostinho</span>
+          <span>Developed by Lucas Agostinho</span>
       </div>
     </div>
   );
-}
-
+};
 export default Footer;
